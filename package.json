@@ -2,14 +2,14 @@
   "name": "fake-api-json-server",
   "version": "1.0.0",
   "description": "fake api with json-server",
-  "main": "index.js",
+  "main": "main.js",
   "engines": {
     "node": "18.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "start": "node index.js",
+    "start": "npm run generate-data && node main.js",
     "generate-data": "node generate-data.js"
   },
   "keywords": [
